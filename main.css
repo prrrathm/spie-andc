@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 * {
 	padding: 0;
 	margin: 0;
@@ -8,10 +8,11 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: "Barlow", sans-serif;
 }
 
-section, footer{
+section,
+footer {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -22,10 +23,9 @@ section, footer{
 section {
 	min-height: 100vh;
 }
-section:nth-child(2n+1) {
+section:nth-child(2n + 1) {
 	background-color: #622222;
 	color: #eee;
-
 }
 footer {
 	background-color: #622222;
@@ -33,3 +33,40 @@ footer {
 	height: 40vh;
 }
 
+.navigation {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	min-height: 70px;
+	width: 100%;
+	padding: 10px 40px;
+}
+nav {
+	position: relative;
+	/* background-color: aliceblue; */
+}
+nav ul {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+nav ul li {
+	background-color: #622222;
+	margin: 0 20px;
+	font-size: 25px;
+	cursor: pointer;
+	transition: 200ms;
+}
+nav ul li:hover {
+	font-weight: 900;
+	transform: scale(1.05, 1.05);
+}
+.nav-logo {
+	height: 50px;
+	position: absolute;
+}
