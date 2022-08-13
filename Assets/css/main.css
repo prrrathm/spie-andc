@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Barlow", sans-serif;
+	background-color: #101010;
+	color: #faebd7;
+}
+a,
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+section,
+footer {
+	display: flex;
+	flex-direction: row;
+	align-items:flex-start;
+	justify-content: center;
+	padding: 30px 80px;
+	text-align: justify;
+}
+
+section {
+	min-height: 100vh;
+}
+section h1 {
+	font-size: 40px;
+	font-weight: bolder;
+}
+section:nth-child(2n) {
+	/* background-color: #522222; */
+	color: #eee;
+}
+footer {
+	background-color: #101010;
+	color: #faebd7;
+	height: 40vh;
+}
+
+.menu-items {
+    text-align: center;
+    position: fixed;
+    padding: 2rem;
+    margin: -6rem 0;
+    top: 100px;
+    right: 10px;
+    list-style: none;
+    opacity: 0;
+    font-size: 2rem;
+    border: 4px solid black;
+    background-color: #101010;
+    border-radius: 0.25em;
+    transform: translateX(-10%);
+    transition: transform 100ms ease-in-out, opacity 200ms;
+}
+
+.menu-items li{
+    color: white;
+    padding: 0.5rem;
+}
+
+.menu-items li a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-items li a:hover{
+    color: rgb(174, 174, 174);
+}
+
+.check {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 3rem;
+    width: 3rem;
+    opacity: 0;
+    z-index: 3;
+}
+
+.check:hover {
+    cursor: pointer;
+}
+
+.check:checked~.menu-items {
+    display: block;
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.ham-menu {
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 0.5rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #101010;
+    border-radius: 0.25em;
+	animation-name: slideInRight;
+	animation-duration: 1s;
+}
+
+.ham-menu .line {
+    background-color: white;
+    border-radius: 1em;
+    width: 2rem;
+    height: 0.25rem;
+}
+
+.ham-menu .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 100ms ease-in-out;
+}
+
+.ham-menu .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 100ms ease-in-out;
+}
+
+.check:checked~.ham-menu .line1 {
+    display: block;
+    transform: rotate(45deg);
+}
+
+.check:checked~.ham-menu .line2 {
+    opacity: 0;
+}
+
+.check:checked~.ham-menu .line3 {
+    display: block;
+    transform: rotate(-45deg);
+}
+.home {
+	/* position: relative; */
+	align-items: center;
+}
+.home .bg-animate {
+	position: absolute;
+	top: 0;
+	left: 0px;
+	right: 0px;
+	/* height: 110vh; */
+	width: 100%;
+	z-index: -1;
+	animation-name: slideInDown;
+	animation-duration: 3s;
+}
+.home h1 {
+	animation-name: slideInLeft;
+	animation-duration: 3s;
+}
+.home h2 {
+	animation-name: slideInLeft;
+	animation-duration: 2.5s;
+}
+.home p {
+	animation-name: slideInLeft;
+	animation-duration: 2s;
+}
