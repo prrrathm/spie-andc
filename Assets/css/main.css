@@ -175,3 +175,35 @@ footer {
 	animation-name: slideInLeft;
 	animation-duration: 2s;
 }
+
+.contact-lable{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    /* justify-content: flex-end; */
+    margin: 20px;
+}
+.contact-lable-item{
+    font-size: 30px;
+}
+.contact-item{
+    display: flex;
+    padding: 30px 80px;
+}
+.contact-section{
+    display: inline;
+    padding: 30px 80px;
+	text-align: justify;
+    min-height: 100vh;
+}
+.icons{
+    height: 30px;
+    width: 30px;
+    display: inline;
+}
+.contact-div{
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
