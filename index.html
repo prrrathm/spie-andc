@@ -19,12 +19,12 @@
 	</head>
 	<body>
 		<nav class="navigation">
-			<input type="checkbox" name="" id="" class="check" />
+			<input type="checkbox" name="" id="" class="check">
 			<ul class="menu-items">
-				<li><a href="" target="_blank">Home</a></li>
-				<li><a href="" target="_blank">About Us</a></li>
-				<li><a href="" target="_blank">Our Team</a></li>
-				<li><a href="" target="_blank">Contact</a></li>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#team">Our Team</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 			<div class="ham-menu">
 				<span class="line line1"></span>
@@ -33,12 +33,12 @@
 			</div>
 		</nav>
 		<!-- Home Page -->
-		<section class="home">
+		<section id="home" class="p-[30px] items-center md:p-[50px]">
 			<svg
 				id="svg"
 				viewBox="0 0 1440 700"
 				xmlns="http://www.w3.org/2000/svg"
-				class="bg-animate transition duration-300 ease-in-out delay-150"
+				class="absolute inset-0 z-[-1] animate__animated animate__slideInDown duration-3000 transition ease-in-out delay-150"
 			>
 				<style>
 					.path-0 {
@@ -167,11 +167,21 @@
 					transform="rotate(-180 720 350)"
 				></path>
 			</svg>
-			<div class="grid grid-cols-3">
+			<div class="grid grid-cols-1">
 				<div class="flex flex-col gap-1">
-					<h1 class="text-[80px] font-black animate__animated ">SPIE</h1>
-					<h2 class="text-2xl p-0 font-bold">Student Chapter, ANDC</h2>
-					<p class="text-base">
+					<h1
+						class="text-[80px] font-black animate__animated animate__slideInLeft"
+					>
+						SPIE
+					</h1>
+					<h2
+						class="text-2xl p-0 font-bold animate__animated animate__slideInLeft"
+					>
+						Student Chapter, ANDC
+					</h2>
+					<p
+						class="text-base animate__animated animate__slideInLeft md:w-[30%]"
+					>
 						Occaecat adipisicing esse amet aliqua sunt sit non. Incididunt
 						laboris duis deserunt anim laboris duis sit amet sunt consequat
 						tempor sit. Enim occaecat adipisicing dolore ex ullamco commodo
@@ -183,21 +193,37 @@
 		</section>
 
 		<!-- About -->
-		<section>
+		<section id="about">
 			<div>
 				<h1>About SPIE ANDC</h1>
 			</div>
 		</section>
 
 		<!-- Team -->
-		<section>
-			<div>
-				<h1>Our Team</h1>
+		<section
+			id="team"
+			class="relative px-10 md:px-[50px] "
+		>
+			<div class="flex flex-col gap-2 w-[100%]">
+				<!-- <h1>Our Team</h1> -->
+				<div class="grid grid-rows-2 md:grid-cols-2 gap-3 w-[100%]">
+					<div
+						class="sticky top-0 text-center h-[100vh] flex justify-center items-start md:items-center"
+					>
+						<h1>Meet our Team</h1>
+					</div>
+					<div>
+						<div class="h-[50vh] flex justify-center items-center">1</div>
+						<div class="h-[50vh] flex justify-center items-center">2</div>
+						<div class="h-[50vh] flex justify-center items-center">3</div>
+						<div class="h-[50vh] flex justify-center items-center">4</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<!-- Contact -->
-		<section>
+		<section id="contact">
 			<div>
 				<h1>Contact Us</h1>
 			</div>
