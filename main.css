@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
 
 * {
 	padding: 0;
@@ -8,10 +8,11 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: "Josefin Sans", sans-serif;
 }
 
-section, footer{
+section,
+footer {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -22,14 +23,12 @@ section, footer{
 section {
 	min-height: 100vh;
 }
-section:nth-child(2n+1) {
+section:nth-child(2n + 1) {
 	background-color: #622222;
 	color: #eee;
-
 }
 footer {
 	background-color: #622222;
 	color: #eee;
 	height: 40vh;
 }
-
